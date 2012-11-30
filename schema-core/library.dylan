@@ -21,8 +21,9 @@ define module schema-core
     entity-attributes;
 
   export <attribute>, attribute-name,
-    attribute-description, attribute-type,
-    attribute-type-setter;
+    attribute-description,
+    attribute-type, attribute-type-setter,
+    attribute-required?, attribute-required?-setter;
 
   export <datatype>, datatype-name,
     datatype-restrictions;

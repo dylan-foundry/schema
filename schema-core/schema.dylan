@@ -26,6 +26,8 @@ define class <attribute> (<object>)
     required-init-keyword: name:;
   constant slot attribute-description :: false-or(<string>) = #f,
     init-keyword: description:;
+  slot attribute-required? :: <boolean> = #f,
+    init-keyword: required?:;
   slot attribute-type :: false-or(<datatype>) = #f,
     init-keyword: type:;
 end class <attribute>;
