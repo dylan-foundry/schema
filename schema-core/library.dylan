@@ -9,6 +9,7 @@ end library;
 
 define module schema-core
   use common-dylan, exclude: { format-to-string };
+  use streams;
   use format-out;
 
   export <schema>, schema-name,
@@ -33,4 +34,7 @@ define module schema-core
     <min-length-restriction>,
     <pattern-restriction>,
     <enumeration-restriction>;
+
+  export <schema-writer>, schema-writer-stream,
+    write-schema;
 end module;

@@ -4,3 +4,4 @@ files: library
        schema
        datatypes
        restrictions
+       schema-writer
