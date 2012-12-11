@@ -19,6 +19,7 @@ define class <entity> (<object>)
     init-keyword: description:;
   constant slot entity-children = make(<stretchy-vector>);
   constant slot entity-attributes = make(<stretchy-vector>);
+  constant slot entity-constraints = make(<stretchy-vector>);
 end class <entity>;
 
 define class <attribute> (<object>)

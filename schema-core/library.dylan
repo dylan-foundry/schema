@@ -18,7 +18,7 @@ define module schema-core
 
   export <entity>, entity-name,
     entity-description, entity-children,
-    entity-attributes;
+    entity-attributes, entity-constraints;
 
   export <attribute>, attribute-name,
     attribute-description,
@@ -35,6 +35,8 @@ define module schema-core
     <min-length-restriction>,
     <pattern-restriction>,
     <enumeration-restriction>;
+
+  export <constraint>, constraint-description;
 
   export <schema-writer>, schema-writer-stream,
     write-schema;
